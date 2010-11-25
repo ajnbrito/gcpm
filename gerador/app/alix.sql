@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `banner` (
   `arquivo_arquivo` varchar(255) NOT NULL,
   PRIMARY KEY (`id_banner`,`fk_id_usuario`),
   KEY `fk_banner_usuario1` (`fk_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=93 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
 
 --
 -- Extraindo dados da tabela `banner`
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `cases` (
   `arquivo_arquivo` varchar(255) NOT NULL,
   PRIMARY KEY (`id_cases`,`fk_id_usuario`),
   KEY `fk_case_usuario1` (`fk_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8  ;
 
 --
 -- Extraindo dados da tabela `cases`
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `empresa` (
   `arquivo_arquivo` varchar(255) NOT NULL,
   PRIMARY KEY (`id_empresa`,`fk_id_usuario`),
   KEY `fk_id_usuario5` (`fk_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8  ;
 
 --
 -- Extraindo dados da tabela `empresa`
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `evento` (
   `arquivo_arquivo` varchar(255) NOT NULL,
   PRIMARY KEY (`id_evento`,`fk_id_usuario`),
   KEY `fk_id_usuario3` (`fk_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8  ;
 
 --
 -- Extraindo dados da tabela `evento`
@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `home` (
   `arquivo_arquivo` varchar(255) NOT NULL,
   PRIMARY KEY (`id_home`,`fk_id_usuario`),
   KEY `fk_id_usuario4` (`fk_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8  ;
 
 --
 -- Extraindo dados da tabela `home`
@@ -156,7 +156,7 @@ CREATE TABLE IF NOT EXISTS `noticia` (
   `arquivo_arquivo` varchar(255) NOT NULL,
   PRIMARY KEY (`id_noticia`,`fk_id_usuario`),
   KEY `fk_noticia_usuario1` (`fk_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
 
 --
 -- Extraindo dados da tabela `noticia`
@@ -180,7 +180,7 @@ CREATE TABLE IF NOT EXISTS `parceiro` (
   `arquivo_logo` varchar(255) NOT NULL,
   PRIMARY KEY (`id_parceiro`,`fk_id_usuario`),
   KEY `fk_id_usuario2` (`fk_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8  ;
 
 --
 -- Extraindo dados da tabela `parceiro`
@@ -203,7 +203,7 @@ CREATE TABLE IF NOT EXISTS `servico` (
   `arquivo_arquivo` varchar(255) NOT NULL,
   PRIMARY KEY (`id_servico`,`fk_id_usuario`),
   KEY `fk_id_usuario` (`fk_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8  ;
 
 --
 -- Extraindo dados da tabela `servico`
@@ -235,7 +235,7 @@ CREATE TABLE IF NOT EXISTS `treinamento` (
   `texto_informacoes` text NOT NULL,
   PRIMARY KEY (`id_treinamento`,`fk_id_usuario`),
   KEY `fk_id_usuario1` (`fk_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8  ;
 
 --
 -- Extraindo dados da tabela `treinamento`
@@ -257,7 +257,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `usuario` varchar(45) NOT NULL,
   `senha` varchar(45) NOT NULL,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
 
 --
 -- Extraindo dados da tabela `usuario`
