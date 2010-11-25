@@ -10,7 +10,7 @@ class Conexao extends PDO {
     function __construct() {
         try {
             $this->pdo = new PDO($this->dsn, $this->user, $this->password);
-            //echo 'Conectou!' vcvxcv;
+            //echo 'Conectou!';
             return true;
         } catch (PDOException $e) {
             echo 'Conexão falhou; ' . $e->getMessage();
